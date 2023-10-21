@@ -1,0 +1,73 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#container{
+    padding-top: 1em;
+}
+@media (width < 560px) {
+    
+#container{
+    width: 100vw;
+    display: flex;
+    padding: 1em; 
+    flex-direction: column;
+}
+
+}
+#card{
+    background-color: gray;
+    height: 120px;
+    width: 100%;
+    padding: 0.5em;
+    display: flex;
+    gap: 0.5em;
+    border-radius: 8px;
+
+}
+#img-holder{
+    width: 160px;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 8px;
+
+
+}
+
+#infos{
+    height: 100%;
+    background-color: aliceblue;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "title title title"
+        "price util util";
+    ;
+    padding: 0.4em;
+
+}
+#title {
+grid-area: title;
+
+    height: 3.6rem;
+width: 200px;}
+#title p {
+  height: 3.6rem;
+width: 200px;
+}
+#price{
+    grid-area: price;
+
+}
+#utils{
+    grid-area: util;
+
+}
+#utils button:first-child{
+    background-color: rgb(206, 11, 11);
+    color: white;
+    padding: 0.6em;
+}
